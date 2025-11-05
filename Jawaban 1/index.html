@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pendaftaran Pengguna</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <section class="container">
+        <h1>Pendaftaran Pengguna</h1>
+
+        <form id="registerForm" novalidate>            
+            <div class="form-group">
+                <label for="fullName">Nama lengkap</label>
+                <input type="text" id="fullName" name="fullName" required />
+                <small class="error-msg"></small>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required />
+                <small class="error-msg"></small>
+            </div>
+            
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required minlength="8" />
+                <small class="error-msg"></small>
+            </div>
+            
+            <div class="form-group">
+                <label for="confirmPassword">Konfirmasi password</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" required />
+                <small class="error-msg"></small>
+            </div>
+
+            <button type="submit">Daftar</button>
+            
+            <p id="successMsg" class="success-msg"></p>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
